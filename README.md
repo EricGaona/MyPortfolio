@@ -1,39 +1,34 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Eric Gaona Portfolio
+User Centric Frontend Development Milestone Project - Code Institute
 
-Welcome ericgaona,
+This is my portfolio website to present to prospective employers. The portfolio highlights six projects that cover a range of technologies, as well as including a bit about myself, my coding skills, and a contact form. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## UX
+My goal in the design was to create a friendly site, easy to understand and navigate. Always thinking about making it responsive.
 
-## Gitpod Reminders
+For employers, I wanted to provide them with a short overview of myself and my capabilities via a user friendly design. This way, they would be able to know who I am, my background, work I've done, and my skills, with the option to contact me if they choose.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## Technologies
+1. HTML
+2. CSS
 
-A blue button should appear to click: *Make Public*,
+## Features
+This site uses the semantics of HTML5 and in CSS they were used media query, float, position, transform nad some more.
 
-Another blue button should appear to click: *Open Browser*.
+## Features Left to Implement
+In the future, I would like to add a collapsed regardless navbar for mobile devices. I would like to also validate the form.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Testing
+This site was tested across multiple browsers (Chrome, Opera, Internet Explorer, FireFox) and on multiple mobile devices (iPhone 4, 5, 7: Chrome,  iPad, Samsung Galaxy) to ensure compatibility and responsiveness. 
 
-A blue button should appear to click: *Make Public*,
+## Deployment
+This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
-Another blue button should appear to click: *Open Browser*.
+## Credits
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+### Content
+All content in the About and Work sections in this portfolio site were written by me.
 
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+### Media
+All photos were taken from Pexels, a stock image library, with the exception of the photo of myself in the About section. 
