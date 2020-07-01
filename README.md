@@ -1,7 +1,7 @@
 # Eric Gaona Portfolio
 User Centric Frontend Development Milestone Project - Code Institute
 
-This is my portfolio website to present to prospective employers. The portfolio highlights six projects that cover a range of technologies, as well as including a bit about myself, my coding skills, and a contact form. 
+This is my portfolio website to present to prospective employers. The portfolio highlights eight projects that cover a range of technologies, as well as including a bit about myself, my coding skills, and a contact form. 
 
 ## UX
 My goal in the design was to create a friendly site, easy to understand and navigate. Always thinking about making it responsive.
