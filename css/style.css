@@ -1,65 +1,83 @@
-body { 
+body {
     margin: 0px;
     padding: 0px;
-    background: #4285F4;
-    font-family:'Open Sans', sans-serif;
-    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0px;
 }
 
-/* XXXXXXXX    HEADER    XXXXXXXXXXX*/
+/* -----------------------------------------    HEADER    */
 
 #fondo {
-    position: relative;
     background-image: url(../img/img01.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
-header a {
-    display: inline-block;
-    margin: 25px;
+header {
+    /*    background: #b0c982;*/
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header_top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-top: 15px;
+    padding: 0px;
+
+}
+
+header h1 a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     letter-spacing: 0.5px;
+    /*    background-color: red;*/
 }
 
-nav {
-    float: right;
-    margin: 12px 20px;
+header h1 a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 nav ul {
     list-style: none;
     padding: 0px;
-    margin: 0px;
+    margin-top: 20px;
+    /*    background-color: orange;*/
 }
 
 header li a {
-    display: block;
     color: white;
-    margin: 5px;
+    margin: 2px;
     font-size: 16px;
-    padding: 7px;
+    padding: 5px;
+    text-decoration: none;
 }
 
-.centrar:before {
-    content: "";
-    display: block;
-    clear: both;
+header li a:hover {
+    text-decoration: none;
 }
 
-.centrar {
-    position: absolute;
-    width: 70%;
-    text-align: center;
-    left: 50%;
-    top: 35%;
-    transform: translateX(-50%);
+#header_center {
     color: white;
+    /*    background: #ac82c9;*/
+    text-align: center;
+    display: block;
+    width: 80%;
+    /*    background: orange;*/
+    margin: 60px auto 0;
 }
 
 h2 {
@@ -74,14 +92,48 @@ h3 {
     font-weight: 600;
 }
 
-.centrar span {
+#header_center span {
     display: block;
 }
 
-/* XXXXXXXX    ABOUT    XXXXXXXXXXX*/
+@keyframes hero-zoom {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+#fondo_outer {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+/*    ---------------------_____        This is the body    */
+/*   ---------------------        About seccion     */
+#cont_blue {
+    background-color: #4285F4;
+    margin-top: -10px;
+}
+
+/*
+#cont {
+    
+    margin-top: -10px;
+}
+*/
+
+#cont h3 {
+    margin: 20px 0 15px 3px;
+    text-transform: uppercase;
+    color: white;
+}
 
 #about div {
-
     border-radius: 5px;
     background-color: #fff;
     padding: 10px;
@@ -89,7 +141,7 @@ h3 {
 
 #about img {
     display: block;
-    position: relative;
+    /*    position: relative;*/
     width: 100%;
     border-radius: 5px;
 }
@@ -115,57 +167,57 @@ h3 {
     display: inline-block;
 }
 
+/*   ---------------------        Work seccion     */
+
 #work {
     display: block;
     margin: 10px;
-    content: "";
-    clear: both;
+    padding: 10px 0px;
+    /*    background-color: red;*/
 }
 
-.sect .caja {
-    margin: 20px 0px;
+.flotar {
     background-color: white;
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 5px;
+    margin-bottom: 30px;
 }
 
-section h3 {
-    padding: 15px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.sect img {
+.flotar img {
     display: block;
-    width: 100%;
+    width: 95%;
+    margin: 10px auto;
 }
 
-.sect h4 {
+.flotar h4 {
+
     text-align: center;
-    margin: 40px 0 30px;
+    margin: 25px 0;
 }
 
-.sect h4 a {
-    text-decoration: none;
-    font-size: 21px;
+.flotar h4 a {
     color: #3c424f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
 }
 
-section div p {
-    color: #6b7c93;
+.flotar p {
     font-size: 17px;
+    width: 95%;
+    margin: 10px auto;
+    color: #6b7c93;
     font-weight: 700;
-    padding: 0px 10px;
+
 }
 
-/* XXXXXXXX    CONTACT    XXXXXXXXXXX*/
+/*   ---------------------     Contact seccion     */
+
 #contact {
     display: block;
     margin: 10px;
     padding: 20px 0px;
+    /*    background-color: red;*/
 }
 
 #imgfondo {
@@ -173,7 +225,7 @@ section div p {
 }
 
 form {
-    padding: 0px 20px;
+    padding: 0px 5px;
 }
 
 form input {
@@ -183,7 +235,7 @@ form input {
     height: 30px;
     border-radius: 5px;
     padding: 5px 0 5px 8px;
-    border: 1px solid black;
+    border: 1px solid black !important;
     color: #000000;
     font-size: 16px;
 
@@ -194,7 +246,7 @@ form textarea {
     width: 100%;
     padding: 8px 0 5px 8px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid black !important;
     font-size: 16px;
 }
 
@@ -255,7 +307,7 @@ textarea:-ms-input-placeholder {
     font-family: 'Open Sans', sans-serif;
 }
 
-#success{
+#success {
     font-size: 17px;
     margin-top: 40px;
     color: black;
@@ -264,7 +316,7 @@ textarea:-ms-input-placeholder {
     display: none;
 }
 
-#fail{
+#fail {
     font-size: 17px;
     margin-top: 40px;
     color: black;
@@ -272,7 +324,9 @@ textarea:-ms-input-placeholder {
     padding: 5px;
     display: none;
 }
-/* XXXXXXXX    FOOTER    XXXXXXXXXXX*/
+
+/*   ---------------------        Footer     */
+
 footer {
     width: 100%;
     height: 90px;
@@ -299,6 +353,7 @@ footer ul li a span {
     display: block;
     height: 100%;
     width: 35px;
+    font-size: 18px;
 
 }
 
@@ -312,13 +367,33 @@ footer ul li a {
     border-radius: 4px;
 }
 
-/* ____________  PRIMERA MEDIA SCREEN ___________*/
+.fa {
+    font-size: 18px;
+}
+
+/*____________________   This is for the  up arrow */
+#arrow{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/arrowUp.png) no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+#arrow a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#arrow:hover{
+    opacity: 1;
+}
+/* XXXXXXXXXXXXXXXXXX  PRIMERA MEDIA SCREEN ___________*/
 
 @media (min-width: 768px) {
 
-    nav {
-        margin: 30px;
-    }
 
     header li {
         display: inline;
@@ -327,128 +402,133 @@ footer ul li a {
     header li a {
         display: inline;
         margin: 5px;
-        text-decoration: none;
     }
 
-    #work .izq {
-        float: left;
-        width: 46%;
-        margin-top: 0px;
-        min-height: 480px;
+    #header_center {
+        padding-top: 100px;
     }
 
-    #work .der {
+    /*   ---------------------        About seccion     */
+    #about div {
+        background-color: white;
+        min-height: 450px;
+        padding-top: 25px;
+
+    }
+
+    #about img {
         float: right;
-        width: 46%;
-        margin-top: 0px;
-        min-height: 480px;
+        width: 50%;
+        margin: 0 0 0 20px;
+    }
+
+    #about p {
+        padding: 0 15px 15px 0;
+    }
+
+    /*   ---------------------        Work seccion     */
+    #work {
+        clear: both;
+    }
+
+    .flotar {
+        width: 48%;
+        float: left;
+        min-height: 500px;
+        margin-right: 4%;
+    }
+
+    .flotar:nth-child(even) {
+        margin-right: 0;
+        /*        background-color: red;*/
+
     }
 
 
 
-}
 
-/* ___________  SEGUNDA MEDIA SCREEN _____________*/
 
-@media (min-width: 992px) {
-
-    #cont {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 1250px;
-        padding: 0px;
-        font-size: 0px;
-    }
+    /*   ---------------------        contact seccion     */
 
     #contact {
         clear: both;
     }
 
-    h2 {
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXX  SEGUNDA MEDIA SCREEN _____________*/
+
+
+@media (min-width: 992px) {
+    
+     /*   ---------------------        Header seccion     */
+     #header_center {
+        padding-top: 100px;
+        
+    }
+     #header_center h2{
         font-size: 55px;
-        letter-spacing: 1px;
-        font-weight: 700;
+         margin-bottom: 50px;
+        
     }
-
-    h3 {
+        #header_center h3{
         font-size: 45px;
-        letter-spacing: 1px;
-        word-spacing: 8px;
+        
     }
-
-    .centrar span {
-        display: inline;
-    }
-
-    .sect .caja {
-        padding: 20px 20px;
-    }
-
-    #work .izq {
-        float: left;
+     #header_center span{
         display: inline-block;
-        width: 28%;
-        margin-right: 1.5%;
-        margin-bottom: 50px;
+        
     }
 
-    #work .der {
-        float: left;
-        display: inline-block;
-        width: 28%;
-        margin-right: 1.5%;
-        margin-bottom: 50px;
-    }
-
-    #work .marg {
-        margin-right: 0px;
-        float: left;
-    }
-
-    #work .marg {
-        margin-right: 0px;
-        float: left;
-    }
-
-    #centrar {
-        width: 98%;
-        position: relative;
-        top: 0;
-        left: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 800px;
-        margin-left: 0.7%;
-    }
+    /*   ---------------------        About seccion     */
+   
 
     #about div {
-        background-color: #ffffff;
-        display: block;
-        width: 98%;
-        height: 550px;
-        border-radius: 5px;
-        padding-top: 60px;
-    }
-
-    #about p {
-        display: inline-block;
-        float: left;
-        width: 45%;
-        padding: 15px 20px 5px 25px;
-        font-size: 20px;
+        background-color: white;
+        min-height: 560px;
+        padding-top: 50px;
     }
 
     #about img {
 
-        display: inline-block;
-        float: right;
-        margin: 20px 25px 0px 0px;
-        width: 45%;
+        margin: 0 20px 0 50px;
     }
 
-    /*   XXXXXXXXXXXXXXXXX   CONTACT XXXXXXXXX  */
+    #about p {
+        font-size: 20px;
+        padding: 0 25px 25px 20px;
+    }
 
+
+
+
+    /*   ---------------------        Work seccion     */
+    .flotar {
+        /*        background-color: blue;*/
+        width: 31%;
+        min-height: 500px;
+
+    }
+
+    .flotar:nth-child(3n+1) {
+        margin-right: 0;
+        /*        background-color: pink;*/
+
+    }
+
+    .flotar:nth-child(3n+2) {
+        margin: 0 3.5%;
+        /*        background-color: green;*/
+
+    }
+
+    .flotar:nth-child(3n+0) {
+        margin-right: 0;
+        /*        background-color: orange;*/
+
+    }
+
+    /*   ---------------------        contact seccion     */
     #contact {
         position: relative;
         left: 0;
@@ -467,6 +547,7 @@ footer ul li a {
         display: block;
         min-height: 580px;
         width: 100%;
+        border-radius: 5px;
     }
 
     form {
@@ -476,12 +557,27 @@ footer ul li a {
         width: 45%;
         z-index: 2;
     }
+
     form input[type="submit"] {
         margin-top: 20px;
         font-size: 20px;
     }
+
+    /*   ---------------------        contact seccion     */
+    footer {
+        padding-top: 25px;
+    }
+
     footer ul li {
         margin-right: 10px;
+    }
+
+    header,
+    #cont,
+    footer {
+        max-width: 1250px;
+        margin: 0 auto;
+
     }
 
 
